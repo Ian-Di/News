@@ -1,0 +1,183 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+li{
+    list-style: none;
+}
+
+.header{
+    background-color: rgb(95, 32, 32);
+}
+
+.in-header{
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    padding: 25px;
+}
+
+.in-header h4{
+    font-size: 6vh;
+    letter-spacing: 5px;
+}
+
+.in-header div{
+    display: flex;
+    padding-top: 10px;
+    gap: 20px;
+}
+
+.in-header a{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+    font-size: 3.5vh;
+    letter-spacing: 2px;
+
+    color: white;
+    text-decoration: none;
+    
+}
+
+.in-header a:hover{
+    color: rgb(128, 128, 128);
+}
+
+.image img{
+    box-shadow: 4px 2px rgba(0, 0, 0, 0.097);
+}
+
+.image{
+    height: 350px;
+    
+
+    display: flex;
+    margin: 20px 0px 0px 250px;
+
+}
+
+.conteiner{
+    padding-top: 1vh;
+}
+
+.footer{
+    background-color: rgb(95, 32, 32);
+    padding: 50px;
+    color: white;
+
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+
+.list li, a, h3{
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+    font-size: 2.6vh;
+}
+
+.list a{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.list a:hover{
+    color: rgb(128, 128, 128);
+}
+
+.footer h4{
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    
+}
+
+
+@media screen and (width < 450px) {
+    .in-header{
+        display: flex;
+        
+        padding: 25px;
+    }
+    
+    .in-header h4{
+        font-size: 4vh;
+       
+    }
+    
+    .in-header div{
+        display: none;
+    }
+    
+    .in-header a{
+        font-size: 3.5vh;
+        letter-spacing: 2px;
+    
+        
+        text-decoration: none; 
+    }
+
+    .image{
+        height: 150px;
+    
+        display: flex;
+        margin: 20px 0px 0px 6px;
+    }
+    
+    .conteiner{
+        display: flex;
+    }
+
+    .conteiner p{
+        font-family: Arial, Helvetica, sans-serif; 
+
+        font-size: 2.5vh;
+        padding: 20px;
+
+        text-align: justify;
+    }
+
+    .footer{
+        padding: 50px;
+    
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+    
+    .list{
+        margin: 20px 0px 0px 0px;
+    }
+
+    .list li, a, h3{
+        color: white;
+        text-decoration: none;
+        padding: 5px 0px 0px 0px;
+        font-size: 2vh;
+    }
+
+    .footer h4{
+        display: flex;
+        justify-content: center;
+        padding-top: 30px;
+        font-size: 1.5vh;
+    }
+}
+
+
+:-webkit-scrollbar-track{
+    background-color: black;
+    width: 6px;
+    height: 6px;
+}
+
+::-webkit-scrollbar{
+    width: 6px;
+    height: 6px;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: rgb(95, 32, 32);
+    width: 6px;
+    height: 6px;
+    border-radius: 10px;
+}
